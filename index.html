@@ -36,9 +36,27 @@ footer {
   </header>
 
   <!-- Event thumbnails -->
-  <div class="gallery">
+  <div class=".gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}">
     <a href="tdf25.html">
-      <img src="503606403_1000604802243967_1365677831852352522_n.jpeg" alt="Tour de Felvidék 2025" class="thumbnail" />
+      <img src="503606403_1000604802243967_1365677831852352522_n.jpeg" alt="Tour de Felvidék 2025" class=".thumbnail {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid black;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  transform: scale(1.02);" />
     </a>
     <!-- Future entries go here -->
   </div>
