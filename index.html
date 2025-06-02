@@ -5,48 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bamasso</title>
   <style>
-    body {
-      margin: 0;
-      font-family: monospace;
-      background-color: white;
-      color: black;
-    }
+    html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: monospace;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
 
-    header {
-      padding: 20px;
-      font-size: 1.5rem;
-    }
+main {
+  flex: 1;
+}
 
-    .logo {
-      font-weight: bold;
-    }
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.6rem;
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .thumbnail {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-      border: 2px solid black;
-      transition: transform 0.2s ease;
-    }
-
-    .thumbnail:hover {
-      transform: scale(1.02);
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      
-    }
   </style>
 </head>
 <body>
