@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bamasso</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border: 2px solid black;
+      transition: transform 0.2s ease;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">bamasso</div>
+  </header>
+
+  <!-- Event thumbnails -->
+  <div class="gallery">
+    <a href="tdf25.html">
+      <img src="503606403_1000604802243967_1365677831852352522_n.jpeg" alt="Tour de Felvidék 2025" class="thumbnail" />
+    </a>
+    <!-- Future entries go here -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    pivi & cigi '25
+  </footer>
+
+</body>
+</html>
