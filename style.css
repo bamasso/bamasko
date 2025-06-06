@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #312f2b;
+    image-rendering: optimizespeed;
+    font-family: Barlow, Source Sans Pro, Open Sans, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.6666666667;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    padding: 30px;
+    text-align: center;
+}
+
+.header svg {
+    display: block;
+}
+
+.header .topnav a {
+    color: #312f2b;
+    float: center;
+    text-decoration: none;
+    font-size: .75rem;
+    font-weight: 900;
+    letter-spacing: .085em;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    text-transform: uppercase;
+}
+
+.header .topnav a:hover {
+    text-decoration: underline;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header' 
+        'left middle middle middle middle right' 
+        'footer footer footer footer footer footer';
+    grid-column-gap: 101px;
+} 
+
+.left, .middle, .right {
+    padding: 25px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right {
+    grid-area: right;
+}
+
+.article-container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.article-container .article-header .sidebar-banner {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.article-container .article-header .sidebar-banner a {
+    display: block;
+    padding-bottom: 83.0769230769%;
+    position: relative;
+    width: 100%;
+}
+
+.article-container .article-header .sidebar-banner a img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.article-container .article-header .article-header-content {
+    float: left;
+    width: 80%;
+    padding: 10px;
+}
+
+.article-container .article-header .article-header-content h4 {
+    margin:0 0 .25rem;
+    font-size: 1.125rem;
+    font-weight: 300;
+    letter-spacing: .085em;
+    line-height: 1.6666666667;
+    text-transform: uppercase;
+}
+
+.article-container .article-header .article-header-content a {
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: .07rem;
+    position: relative;
+    text-transform: uppercase;
+    color: #cf8a0c;
+    text-decoration: none;
+}
+
+.article-container .article-header .article-header-content a:hover {
+    text-decoration: underline;
+}
+
+.article-container .article-header .article-header-content .article-title {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -.01em;
+    line-height: 1.2083333333;
+}
+
+.article-container .article-header .article-header-content .author {
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: .07rem;
+    text-transform: uppercase;
+}
+
+.article-container .article-header .article-header-content .date {
+    font-size: .8125rem;
+    font-weight: 400;
+    margin-top: .125rem;
+}
+
+.article-container .article-content p {
+    max-width: 1400px;
+    padding-left: 284px;
+    padding-right: 284px;
+}
+
+.article-container .article-content img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 4px;
+}
+
+.article-container .article-content .row > .column {
+    padding: 0 8px;
+}
+
+.article-container .article-content .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.article-container .article-content .column {
+    float: left;
+    width: 33%;
+}
+
+/* Footer */
+.footer {
+    background-color: #dfd4bf;
+    grid-area: footer;
+    text-align: center;
+    padding: 4rem;
+}
+
+.footer .nav-featured nav ul {
+    list-style-type: none;
+}
+
+.footer .nav-featured li {
+    display: inline-block;
+    font-weight: 900;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    text-transform: uppercase;
+}
+
+.footer .nav-featured li a {
+    font-size: 1.875rem;
+    color: #312f2b;
+    text-decoration: none;
+}
+
+.footer .nav-featured li a:hover {
+    text-decoration: underline;
+}
+
+.footer .nav-featured li a.highlight {
+    color: #cf8a0c;
+}
+
+.footer .outro {
+    margin: 0 auto;
+    max-width: 43.75rem;
+    padding-top: 2rem;
+}
+
+.footer .nav-main {
+    margin: 0 auto;
+    max-width: 47.5rem;
+    padding-top: 2rem;
+}
+
+.footer .nav-main nav ul {
+    list-style-type: none;
+}
+
+.footer .nav-main li {
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 900;
+    letter-spacing: .085em;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    text-transform: uppercase;
+}
+
+.footer .nav-main li a {
+    color: #312f2b;
+    text-decoration: none;
+}
+
+.footer .nav-main li a:hover {
+    text-decoration: underline;
+}
+
+.footer .nav-social {
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 12.5rem;
+}
+
+.footer .nav-social ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+}
+
+.footer .nav-social a {
+    display: block;
+    height: 1.625rem;
+    width: 1.625rem;
+}
+
+.footer .colophon {
+    padding-top: 2rem;
+}
+
+.footer .colophon p {
+    margin: 0 auto;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .grid-container  {
+        grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+}
