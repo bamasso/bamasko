@@ -10,20 +10,31 @@ body {
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 1.6666666667;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
 }
 
 /* Header */
 .header {
-    grid-area: header;
-    padding: 30px;
     text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 2rem;
 }
 
-.header svg {
-    display: block;
+.header .logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.header .logo {
+  width: 100%;
+  max-width: 60%;
+  height: auto;
+  display: block;
 }
 
 .header .topnav a {
@@ -42,37 +53,10 @@ body {
     text-decoration: underline;
 }
 
-/* The grid container */
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-        'header header header header header header' 
-        'left middle middle middle middle right' 
-        'footer footer footer footer footer footer';
-    grid-column-gap: 101px;
-} 
-
-.left, .middle, .right {
-    padding: 25px;
-}
-
-.left {
-    grid-area: left;
-}
-
-.middle {
-    grid-area: middle;
-}
-
-.right {
-    grid-area: right;
-}
-
 .article-container {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-    margin: 0;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
 }
 
 .article-container .article-header .sidebar-banner {
@@ -144,9 +128,9 @@ body {
 }
 
 .article-container .article-content p {
+    margin: 0 auto;
     max-width: 1400px;
-    padding-left: 284px;
-    padding-right: 284px;
+    padding: 40px 100px;
 }
 
 .article-container .article-content img {
@@ -173,8 +157,9 @@ body {
 /* Footer */
 .footer {
     background-color: #dfd4bf;
-    grid-area: footer;
     text-align: center;
+    margin: auto;
+    width: 100%;
     padding: 4rem;
 }
 
@@ -266,14 +251,62 @@ body {
     margin: 0 auto;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .grid-container  {
-        grid-template-areas: 
-        'header header header header header header' 
-        'left left left left left left' 
-        'middle middle middle middle middle middle' 
-        'right right right right right right' 
-        'footer footer footer footer footer footer';
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .header .logo {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
+
+    .article-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .article-container .article-header .sidebar-banner {
+        width: 30%;
+        padding: 5px;
+    }
+
+    .article-container .article-header .article-header-content {
+        width: 70%;
+        padding: 5px;
+    }
+
+    .article-container .article-header .article-header-content h4 {
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.085em;
+        line-height: 1;
+    }
+
+    .article-container .article-header .article-header-content a {
+        font-size: 0.875rem;
+        letter-spacing: .02rem;
+    }
+
+    .article-container .article-header .article-header-content .article-title {
+        font-size: 2.5rem;
+        letter-spacing: -.01em;
+        line-height: 1;
+    }
+
+    .article-container .article-header .article-header-content .author {
+        font-size: 0.875rem;
+        letter-spacing: .02rem;
+    }
+
+    .article-container .article-content p {
+        padding: 10px;
+    }
+}
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+}
+
+/* Extra small devices (≤ 400px) */
+@media (max-width: 400px) {
 }
