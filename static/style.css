@@ -129,7 +129,7 @@ body {
 
 .article-container .article-content p {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 90%;
     padding: 40px 100px;
 }
 
